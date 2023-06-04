@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<title>calculator</title>
+<body class="bg-red-100">
+    <div class="text-2xl"> 
+        <h1 class="max-w-md mx-auto bg-auto text-center shadow-md rounded"><B>CALCULATOR</B></h1>
+    </div>
+        <div class="container mx-auto mt-8">
+            <div class="max-w-md mx-auto bg-gray-700 p-4 shadow-md rounded">
+              <input type="text" id="result" class=" mb-4 p-2 bg-white border border-gray-300 rounded" readonly>
+        
+              <div class="grid grid-cols-4 gap-2">
+                <button class="p-2 bg-gray-300 rounded" onclick="appendNumber('7')">7</button>
+                <button class="p-2 bg-gray-300 rounded" onclick="appendNumber('8')">8</button>
+                <button class="p-2 bg-gray-300 rounded" onclick="appendNumber('9')">9</button>
+                <button class="p-2 bg-gray-500 text-white rounded" onclick="appendOperator('/')">/</button>
+                <button class="p-2 bg-gray-300 rounded" onclick="appendNumber('4')">4</button>
+                <button class="p-2 bg-gray-300 rounded" onclick="appendNumber('5')">5</button>
+                <button class="p-2 bg-gray-300 rounded" onclick="appendNumber('6')">6</button>
+                <button class="p-2 bg-gray-500 text-white rounded" onclick="appendOperator('*')">*</button>
+                <button class="p-2 bg-gray-300 rounded" onclick="appendNumber('1')">1</button>
+                <button class="p-2 bg-gray-300 rounded" onclick="appendNumber('2')">2</button>
+                <button class="p-2 bg-gray-300 rounded" onclick="appendNumber('3')">3</button>
+                <button class="p-2 bg-gray-500 text-white rounded" onclick="appendOperator('-')">-</button>
+                <button class="p-2 bg-gray-300 rounded" onclick="appendNumber('0')">0</button>
+                <button class="p-2 bg-gray-300 rounded" onclick="appendNumber('.')">.</button>
+                <button class="p-2 bg-gray-500 text-white rounded" onclick="calculate()">=</button>
+                <button class="p-2 bg-gray-500 text-white rounded" onclick="appendOperator('+')">+</button>
+                <button class="col-span-4 p-2 bg-red-500 text-white rounded" onclick="clearResult()">Clear</button>
+              </div>
+            </div>
+          </div>
+  <script src="scriptjs.js"></script>
+</body>
+</html>
